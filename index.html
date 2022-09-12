@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <title>Find the Penguins</title>
+        <meta charset="utf-8">
+       
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+ </script>
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<script src="js/index.js"></script>
+
+</head>
+<body>
+<div id="container">
+<div id ="welcome">
+<h1>WELCOME!</h1>
+<p class="rescue">Penguins: Please rescue us.</p>
+<button id="btn2">START</button>
+</div>
+<div class="popup-overlay">
+<div class="popup-content">
+<h2 id="winLoss"></h2>
+<img class="popup-image" src="./images/yeti.png">
+<p id="goodNews"></p>
+<div>
+<input type="button" id="clear1" value= "RESTART" onclick="reset1()">
+</div>
+</div>
+</div>
+<div id="gameholder">
+<div id="title"></div>
+<div id="images">
+   <img name="img" id="penguin0" class="pen" src="./images/mound_1.png" onclick="view_image(0)" ></img>
+   <img name="img" id="penguin1" class="pen" src="./images/mound_2.png" onclick="view_image(1)"></img>
+   <img name="img" id="penguin2" class="pen" src="./images/mound_3.png" onclick="view_image(2)"></img>
+   <img name="img" id="penguin3" class="pen" src="./images/mound_4.png" onclick="view_image(3)" ></img>
+   <img name="img" id="penguin4" class="pen" src="./images/mound_5.png" onclick="view_image(4)" ></img>
+   <img name="img" id="penguin5" class="pen" src="./images/mound_6.png" onclick="view_image(5)" ></img>
+   <img name="img" id="penguin6" class="pen" src="./images/mound_7.png" onclick="view_image(6)" ></img>
+   <img name="img" id="penguin7" class="pen" src="./images/mound_8.png" onclick="view_image(7)" ></img>
+   <img name="img" id="penguin8" class="pen" src="./images/mound_5.png" onclick="view_image(8)" ></img>
+</div> 
+</div>
+</div>
+<div>
+<input type="button" id="clear" value= "RESET" onclick="reset1()">
+</div>
+<div id="num">
+<p class ="score">Your Score:</p>
+<p class="score1">High Score:</p>
+</div>
+<script>
+random();
+</script>
+</body>
+</html>
